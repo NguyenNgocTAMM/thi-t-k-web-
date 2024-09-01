@@ -1,0 +1,151 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Màu nền tối */
+    color: #e0e0e0; /* Màu chữ sáng */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f; /* Màu nền header tối hơn */
+    border-bottom: 2px solid #333; /* Đường viền dưới */
+    border-radius: 8px; /* Bo tròn nhẹ cho góc */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    margin-right: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Header text */
+h1 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    color: #bdbdbd; /* Màu chữ phụ */
+}
+
+/* Thanh tìm kiếm */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 20px 0 0 20px; /* Bo tròn chỉ bên trái */
+    outline: none;
+    background-color: #333; /* Nền input tối */
+    color: #e0e0e0;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-left: none;
+    border-radius: 0 20px 20px 0; /* Bo tròn chỉ bên phải */
+    background-color: #0073e6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #005bb5; /* Màu khi hover */
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.sessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.session {
+    width: 48%;
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.session:hover {
+    background-color: #292929; /* Màu khi hover */
+    transform: translateY(-5px);
+}
+
+.session h2 {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.session ul {
+    list-style-type: none;
+}
+
+.session ul li {
+    margin-bottom: 10px;
+}
+
+.session ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.session ul li a:hover {
+    color: #80d0ff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #bdbdbd;
+    margin-top: 30px;
+    border-radius: 8px;
+}
